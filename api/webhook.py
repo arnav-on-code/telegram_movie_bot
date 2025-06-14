@@ -138,8 +138,8 @@ def setwebhook():
     )
     print("Webhook setup response:", s.status_code, s.text)  # Debugging line
     return "Success" if s.status_code == 200 else "Fail"
+setwebhook()
+# if __name__ == '__main__':
+#     setwebhook()
 
-if __name__ == '__main__':
-    setwebhook()
-
-    app.run(port=8000)
+#     app.run(port=8000)
