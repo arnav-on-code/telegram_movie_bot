@@ -82,9 +82,12 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, TypeHandler
 import os
 import asyncio
-import movies_db
+import sys
 import requests
-FILE_DATABASE = movies_db.FILE_DATABASE
+
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from movies_db import FILE_DATABASE  # <-- Make sure the filename matches exactly!
 app = Flask(__name__)
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
