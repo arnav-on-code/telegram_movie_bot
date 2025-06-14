@@ -8,7 +8,6 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 from movies_db import FILE_DATABASE  # or movies_db, depending on your filename
 
-from movies_db import FILE_DATABASE
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 application = Application.builder().token(BOT_TOKEN).build()
