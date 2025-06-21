@@ -1,6 +1,6 @@
 import requests, time
 
-TOKEN = "7963658960:AAHNEq9ijhTbsXto_wbMfasU7jmtxnHgmzg"
+TOKEN = "bot token here"
 url = f"https://api.telegram.org/bot{TOKEN}/getUpdates"
 last_update_id = 0
 
